@@ -195,12 +195,27 @@ delete user.age
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
-  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
-  Outside of your class, create an instance of your cat, passing in whatever values you would like.
+  Create a class called 'Cat'. Make sure to call your constructor, 
+  and require these 3 parameters: name, age, color.
+  Outside of your class, create an instance of your cat, 
+  passing in whatever values you would like.
   Print the name of your cat instance using dot notation.
 */
 
-//Code here
+class Cat {
+  constructor(name, age, color){
+   this.name = name,
+   this.age = age,
+   this.color = color
+  }
+}
+
+let cat1 = new Cat("Lucky", 1, "white")
+
+console.log(cat1.name)
+
+
+
 
 
 
