@@ -136,7 +136,11 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
+function totalPopulation(obj){
+let{Utah, California, Texas, Arizona} = obj
+return Utah + California + Texas + Arizona
+}
+console.log(obj)
 
 
 
