@@ -189,7 +189,8 @@ user.email = "bryan.smith@devmountain.in"
   Using the user object above, delete the users age off of the object.
 */
 
-//Code Here
+delete user.age
+
 
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
