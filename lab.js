@@ -180,7 +180,8 @@ var user = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user.name = "Bryan G."
+user.email = "bryan.smith@devmountain.in"
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
