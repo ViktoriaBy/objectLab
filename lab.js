@@ -396,9 +396,19 @@ let helensInfo = {...contactInfo, ...shippingInfo};
   And finally, print the value of the mileage.
 */
 
-//Code Here 
+class Vehicle {
+  constructor(capacity, color, mileage){
+    this.capacity = capacity,
+    this.color = color,
+    this.mileage = mileage
+  }
+  move(miles){
+   this.mileage = add.miles
+  }
+  
+}
 
-
+console.log(miles)
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
