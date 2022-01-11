@@ -221,14 +221,29 @@ console.log(cat1.name)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
-  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
-  Add a function to your Wizard class called castSpell. This function should print "{name} has cast {favoriteSpell}"
-  Outside of your class, create an instance of your Wizard, passing in whatever values you would like.
+  Create a class called 'Wizard'. Make sure to call your constructor, 
+  and require these 3 parameters: name, age, favoriteSpell.
+  Add a function to your Wizard class called castSpell. 
+  This function should print "{name} has cast {favoriteSpell}"
+  Outside of your class, create an instance of your Wizard, 
+  passing in whatever values you would like.
   Call the castSpell function on the instance of your wizard.
 */
 
-//Code here
+class Wizzard {
+  constructor(name, age, favoriteSpell){
+    this.name = name,
+    this.age = age,
+    this.favoriteSpell = favoriteSpell
+  }
+  castSpell(){
+    console.log(`${this.name} has cast ${this.favoriteSpell}`)
 
+  }
+}
+let newWizzard = new Wizzard("Harry", "16", "Hocus Pocus")
+
+newWizzard.castSpell()
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
     Write a class called Phone. We'll use it as if we were creating
