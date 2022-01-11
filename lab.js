@@ -258,7 +258,8 @@ newWizzard.castSpell()
     and it won't be sold yet. 
 
     Create a method called 'sell'.
-    sell should be a function that changes the value of sold to true and prints the string: '{brand} {model} has been sold.'
+    sell should be a function that changes the value of sold to true and prints the string: 
+    '{brand} {model} has been sold.'
     
     Create another method called 'changePrice'. We can use this 
     to change the price in case a phone isn't selling.
@@ -267,7 +268,27 @@ newWizzard.castSpell()
     to be newPrice.
 */
 
-//Code Here
+class Phone{
+  constructor(brand, model, storage, color, price, sold){
+    this.brand = brand,
+    this.model = model,
+    this.storage = storage,
+    this.color = color,
+    this.price = price,
+    this.sold = false
+  }
+sell(){
+this.sold = true
+//console.log(`${brand} ${model} has been sold.`)
+}
+
+changePrice(newPrice){
+this.price = newPrice
+}
+
+}
+
+
 
   
 /*
@@ -280,7 +301,9 @@ newWizzard.castSpell()
     - price: number
 */
 
-//Code Here
+let phoneOne = new Phone ("Nokia", "KKD", 125, "white", 500)
+let phoneTwo = new Phone ("Siemens", "SXG75", 260, "pink", 200)
+let phoneThree = new Phone ("Sony Ericsson", "LIP3", 560, "silver", 150)
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -289,7 +312,9 @@ newWizzard.castSpell()
   Then console.log that object to see the price change
 */ 
 
-//Code Here 
+phoneThree.changePrice(150)
+
+console.log(phoneThree)
 
 
 /*
@@ -298,7 +323,9 @@ newWizzard.castSpell()
   Print the value of that phone's sell property to make sure it's been changed to true
 */
 
-//Code Here 
+phoneOne.sell()
+
+console.log(phoneOne.sold)
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
