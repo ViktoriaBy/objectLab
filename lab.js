@@ -140,7 +140,7 @@ function totalPopulation(obj){
 let{Utah, California, Texas, Arizona} = obj
 return Utah + California + Texas + Arizona
 }
-console.log(obj)
+
 
 
 
