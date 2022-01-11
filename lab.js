@@ -154,7 +154,11 @@ return Utah + California + Texas + Arizona
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+function ingredients(obj){
+  let {carb, fat, protein} = obj
+  return [carb, fat, protein]
+}
+
 
 
 
